@@ -28,5 +28,7 @@ trusted-host=mirrors.aliyun.com" > ~/.pip/pip.conf
 RUN pip install django-smtp-ssl==1.0
 RUN sed -i "s/= 'smtp'/= 'django_smtp_ssl.SSLEmailBackend'/g" /etc/sentry/sentry.conf.py
 
+RUN pip install git+https://github.com/anshengme/sentry-dingding.git
+RUN pip install git+https://github.com/evilbs/sentry-dingtalk.git
 
 
