@@ -8,6 +8,7 @@
 # 2、增加钉钉机器人插件
 
 需要在环境变量中新增:
+
 SENTRY_SERVER_EMAIL
 
 SENTRY_EMAIL_HOST
